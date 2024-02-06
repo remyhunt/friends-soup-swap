@@ -1,6 +1,6 @@
-import * as d3 from "d3";
+import * as d3 from "d3"
 
-const  spiderChart = (data, features) => {
+const  spiderChart = (data: any, features: any) => {
   // create 600x600 chart
   let width = 600;
   let height = 600;
@@ -77,16 +77,16 @@ const  spiderChart = (data, features) => {
   svg
     .selectAll(".axislabel")
     .data(featureData)
-    .join((enter) =>
+    .join((enter: any) =>
       enter
         .append("text")
-        .attr("x", (d) => d.label_coord.x)
-        .attr("y", (d) => d.label_coord.y)
+        .attr("x", (d: any) => d.label_coord.x)
+        .attr("y", (d: any) => d.label_coord.y)
         .text((d) => d.name)
         .attr("fill", labelColor)
     );
 
-  function getPathCoordinates(data_point) {
+  function getPathCoordinates(data_point: any) {
     let coordinates = [];
     for (var i = 0; i < features.length; i++) {
       let ft_name = features[i];
@@ -99,7 +99,7 @@ const  spiderChart = (data, features) => {
   svg
     .selectAll("path")
     .data(data)
-    .join((enter) =>
+    .join((enter: any) =>
       enter
         .append("path")
         .datum((d) => getPathCoordinates(d))
