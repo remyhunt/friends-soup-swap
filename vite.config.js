@@ -4,4 +4,13 @@ import { defineConfig } from "vite";
 export default defineConfig({
   base: "./",
   // your other configuration...
+  build: {
+    outDir:'dist',
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        soup: './soup.html',
+      }
+    }
+  },
 });

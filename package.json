@@ -17,6 +17,7 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
+    "particles.js": "^2.0.0",
     "underscore": "^1.13.6"
   }
 }
