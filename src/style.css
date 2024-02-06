@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  /* base styles can live here :) */
+}
+
+
+/* body {
+  @apply bg-gray-100 text-gray-900 font-sans flex h-[100vw] w-full items-center justify-center;
+}
+.bar-chart {
+  @apply p-10
+}
+.bar {
+	fill: steelblue;
+}
+
+.chart-sample {
+  @apply bg-white flex flex-col w-[500px] h-auto rounded-lg;
+} */
